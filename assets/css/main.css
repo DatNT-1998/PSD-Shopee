@@ -342,6 +342,49 @@
     font-weight: 500;
 }
 
+/* Header sort bar */
+
+.header__sort-bar {
+    display: none;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    height: var(--header-sort-bar-height);
+    background-color: var(--white-color);
+    list-style: none;
+    margin: 0;
+    padding-left: 0; 
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header__sort-item {
+    flex: 1;
+}
+
+.header__sort-link {
+    position: relative;
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    line-height: var(--header-sort-bar-height);
+    text-align: center;
+    height: 100%;
+}
+
+.header__sort-link::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    height: 60%;
+    border-left: 1px solid #e5e5e5;
+}
+
+.header__sort-item--active .header__sort-link {
+    color: var(--primary-color)
+}
 
 /* Authen modal */
 
