@@ -386,6 +386,10 @@
     color: var(--primary-color)
 }
 
+.header__sort-item:first-child .header__sort-link::before {
+    display: none;
+}
+
 /* Authen modal */
 
 .auth-form__container{
@@ -524,11 +528,20 @@
 
 /* Header nav */
 
-.header-with-search{
+.header-with-search {
     height: var(--header-with-search-height);
     display: flex;
     align-items: center;
     margin: 0 8px;
+}
+
+.header__mobile-search {
+    padding: 0 12px;
+}
+
+.header__mobile-search-icon {
+    font-size: 2.6rem;
+    color: var(--white-color);
 }
 
 .header__logo{
@@ -552,6 +565,10 @@
     border-radius: 2px;
     display: flex;
     align-items: center;
+}
+
+.header__search-checkbox:checked ~ .header__search {
+    display: flex;
 }
 
 .header__cart{
