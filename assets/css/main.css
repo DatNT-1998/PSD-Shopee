@@ -521,6 +521,7 @@
 
 .header__mobile-search {
   padding: 0 12px;
+  display: none;
 }
 
 .header__mobile-search-icon {
@@ -979,6 +980,7 @@
 /* mobile category */
 
 .mobile-category {
+  display: none;
 }
 
 .mobile-category__list {
@@ -1012,18 +1014,22 @@
 
 .mobile-category__link {
   --line-height: 2rem;
-  text-decoration: none;
-  color: var(--white-color);
-  display: block;
-  width: 110px;
   height: calc(var(--line-height) * 2);
   line-height: var(--line-height);
+  color: var(--white-color);
+
+  display: block;
+  text-decoration: none;
+  width: 110px;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0px 6px;
+  border-radius: 4px;
+
   display: --webkit-box;
   --webkit-box-orient: vertical;
   --webkit-line-clamp: 2;
-  font-size: 1.4rem;
-  text-align: center;
-  border-radius: 4px;
+
   user-select: none;
   -webkit-user-select: none;
 }
